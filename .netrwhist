@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_cnt =8
 let g:netrw_dirhist_1='/Applications/MAMP/db/sqlite'
 let g:netrw_dirhist_2='/Applications/MAMP/db/mysql56'
 let g:netrw_dirhist_3='/Users/kkato/dev/zendesk/app'
@@ -7,3 +7,4 @@ let g:netrw_dirhist_4='/Users/kkato/dev/send-mail/slackweb'
 let g:netrw_dirhist_5='/Users/kkato/dev/send-mail/slackweb-1.0.5.egg-info'
 let g:netrw_dirhist_6='/Users/kkato/dev/send-mail/.git'
 let g:netrw_dirhist_7='/Users/kkato/.vim'
+let g:netrw_dirhist_8='/Users/kkato/.config/fisher/github.com'
