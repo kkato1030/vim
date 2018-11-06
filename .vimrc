@@ -17,6 +17,7 @@ set shiftwidth=2
 set runtimepath+=~/.vim/dein
 call dein#begin(expand('~/.vim/dein'))
   call dein#add('mattn/emmet-vim')
+  call dein#add('cocopon/iceberg.vim')
 call dein#end()
 
 " emmet-vim
