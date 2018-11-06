@@ -14,10 +14,6 @@ set tabstop=2
 set shiftwidth=2
 
 " expand
-if dein#check_install()
-  call dein#install()
-end
-
 set runtimepath+=~/.vim/dein
 call dein#begin(expand('~/.vim/dein'))
   call dein#add('mattn/emmet-vim')
