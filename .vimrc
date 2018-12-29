@@ -19,6 +19,8 @@ call dein#begin(expand('~/.vim/dein'))
   call dein#add('mattn/emmet-vim')
   call dein#add('cocopon/iceberg.vim')
   call dein#add('w0rp/ale')
+  call dein#add('posva/vim-vue')
+  call dein#add('tyru/caw.vim')
 call dein#end()
 
 " emmet-vim
@@ -38,15 +40,23 @@ let b:ale_linters={
 syntax on
 colorscheme iceberg
 
+" change buffer
+nnoremap <silent> <C-j> :bprev<CR>
+nnoremap <silent> <C-k> :bnext<CR>
+
+" comment out
+
 " practice
 noremap <Up> <Nop>
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-nnoremap <silent> <C-j> :bprev<CR>
-nnoremap <silent> <C-k> :bnext<CR>
 inoremap <Up> <Nop>
 inoremap <Down> <Nop>
 inoremap <Left> <Nop>
 inoremap <Right> <Nop>
 inoremap <silent> jj <ESC>
+
+" execute editting file
+autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %
+autocmd BufNewFile,BufRead *.py nnoremap <C-e> :!python %
