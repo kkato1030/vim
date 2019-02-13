@@ -18,6 +18,7 @@ set runtimepath+=~/.vim/dein
 call dein#begin(expand('~/.vim/dein'))
   call dein#add('mattn/emmet-vim')
   call dein#add('cocopon/iceberg.vim')
+  call dein#add('cocopon/vaffle.vim')
   call dein#add('w0rp/ale')
   call dein#add('posva/vim-vue')
   call dein#add('tyru/caw.vim')
@@ -41,22 +42,27 @@ syntax on
 colorscheme iceberg
 
 " change buffer
-nnoremap <silent> <C-j> :bprev<CR>
-nnoremap <silent> <C-k> :bnext<CR>
+nnoremap <silent> <c-j> :bprev<cr>
+nnoremap <silent> <c-k> :bnext<cr>
 
 " comment out
 
 " practice
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-inoremap <Up> <Nop>
-inoremap <Down> <Nop>
-inoremap <Left> <Nop>
-inoremap <Right> <Nop>
-inoremap <silent> jj <ESC>
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+inoremap <silent> jj <esc>
 
 " execute editting file
-autocmd BufNewFile,BufRead *.rb nnoremap <C-e> :!ruby %
-autocmd BufNewFile,BufRead *.py nnoremap <C-e> :!python %
+autocmd bufnewfile,bufread *.rb nnoremap <c-e> :!ruby %
+autocmd bufnewfile,bufread *.py nnoremap <c-e> :!python %
+autocmd bufnewfile,bufread *.sh nnoremap <c-e> :!./%
+
+" all pbcopy for mac
+noremap sa ggVG
+noremap cp :!pbcopy;pbpaste<cr>
