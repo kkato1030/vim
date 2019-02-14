@@ -1,0 +1,35 @@
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+[[plugins]]
+repo = 'mattn/emmet-vim'
+hook_add= """
+  let g:user_emmet_leader_key='<c-e>'
+  let g:user_emmet_settings={
+    \ 'variables': {
+      \ 'lang': 'ja'
+    \ },
+    \ 'indentation': '  '
+  \ }
+"""
+
+[[plugins]]
+repo = 'cocopon/iceberg.vim'
+hook_add = "colorscheme iceberg"
+
+[[plugins]]
+repo = 'cocopon/vaffle.vim'
+
+[[plugins]]
+repo = 'w0rp/ale'
+hook_add = """
+  let b:ale_linters={
+    \ 'python': ['flake8']
+    \}
+"""
+
+[[plugins]]
+repo = 'tyru/caw.vim'
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
