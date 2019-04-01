@@ -34,3 +34,7 @@ autocmd bufnewfile,bufread serverless.yml nnoremap <c-e> :!sls deploy
 " all pbcopy for mac
 noremap sa ggVG
 noremap cp :!pbcopy;pbpaste<cr>
+
+" execute sh cmd
+vnoremap <Space><CR> :!sh<CR>
+nnoremap <Space><CR> V:!sh<CR>
