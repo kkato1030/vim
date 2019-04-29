@@ -36,3 +36,9 @@ repo = 'Shougo/neocomplete.vim'
 
 [[plugins]]
 repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'posva/vim-vue'

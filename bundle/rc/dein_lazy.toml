@@ -1,9 +1,0 @@
-[[plugins]]
-repo = 'posva/vim-vue'
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-hook_post_source = 'let g:syntastic_typescript_tsc_args = "--experimentalDecorators --target ES5"'
-
-[[plugins]]
-repo = 'elmcast/elm-vim'
