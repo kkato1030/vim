@@ -1,4 +1,5 @@
 " change buffer
+inoremap <silent> jj <esc>
 nnoremap <silent> <c-j> :bprev<cr>
 nnoremap <silent> <c-k> :bnext<cr>
 
@@ -21,16 +22,16 @@ inoremap <up> <nop>
 inoremap <down> <nop>
 inoremap <left> <nop>
 inoremap <right> <nop>
-inoremap <silent> jj <esc>
 
 " execute editting file
 autocmd bufnewfile,bufread *.fish nnoremap <c-e> :!source %
+autocmd bufnewfile,bufread .envrc nnoremap <c-e> :!direnv allow
 autocmd bufnewfile,bufread *.rb nnoremap <c-e> :!ruby %
 autocmd bufnewfile,bufread *.js nnoremap <c-e> :!node %
 autocmd bufnewfile,bufread *.py nnoremap <c-e> :!python %
 autocmd bufnewfile,bufread *.sh nnoremap <c-e> :!./%
 autocmd bufnewfile,bufread *.hs nnoremap <c-e> :!stack runghc ./%
-autocmd bufnewfile,bufread *.vim nnoremap <c-e> :!source %
+autocmd bufnewfile,bufread *.vim nnoremap <c-e> :source %
 autocmd bufnewfile,bufread serverless.yml nnoremap <c-e> :!sls deploy
 
 " all pbcopy for mac
