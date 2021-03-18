@@ -29,7 +29,7 @@ autocmd bufnewfile,bufread .envrc nnoremap <c-e> :!direnv allow
 autocmd bufnewfile,bufread *.rb nnoremap <c-e> :!ruby %
 autocmd bufnewfile,bufread *.js nnoremap <c-e> :!node %
 autocmd bufnewfile,bufread *.py nnoremap <c-e> :!python %
-autocmd bufnewfile,bufread *.sh nnoremap <c-e> :!./%
+autocmd bufnewfile,bufread *.sh nnoremap <c-e> :! %
 autocmd bufnewfile,bufread *.hs nnoremap <c-e> :!stack runghc ./%
 autocmd bufnewfile,bufread *.vim nnoremap <c-e> :source %
 autocmd bufnewfile,bufread serverless.yml nnoremap <c-e> :!sls deploy
